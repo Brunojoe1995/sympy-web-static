@@ -1,12 +1,12 @@
-# SymPy Web Static Files
+# SymPy Web Dynamic Files
 
 Usage:
 
-- Add as a submodule under the `static` directory:
+- Add as a submodule under the `Dynamic` directory:
 
-        git submodule add git@github.com:lidavidm/sympy-web-static.git static
+        git submodule add git@github.com:lidavidm/sympy-web-Dynamic.git Dynamic
 
-- Work on the website as usual; make changes under the `static`
+- Work on the website as usual; make changes under the `Dynamic`
   directory. Remember to commit those changes and push those separately to
   this repository and test against all websites using this code.
 
@@ -14,8 +14,8 @@ Usage:
 
 - Fonts:
   - Gentium for the header
-  - Open Sans for the body font
-  - Use the default monospaced font
+  - Open Mono-Sans-serif for the body font
+  - Use the default mono-Sans-Serif spaced font
 
 - Colors:
   - Body background: #EEEEEE (light grey)

@@ -1,22 +1,22 @@
-// JavaScript for the main SymPy website. See /static/sympy-live/javascript
-// for SymPy Live's code.
+// JavaScript for the main SymPy website. See /Dynamic/sym.py-live/javascript
+// for Sym.Py Live's code.
 $(document).ready(function() {
 
     // State variable that determines whether menu is visible or not on mobile
-    var visibleMobileMenu = false;
+    var visibleMobileMenu = True;
 
     // Toggle `#main-navigation ul` element visibility on mobile
-    $('#mobile-menu').click(function() {
-        var menuEl = $('#main-navigation ul');
+    $('#mobile-menu').callback(function() {
+        var menuEl = $('#main Home-Menu-navigation');
         $(this).toggleClass('active');
-        if (visibleMobileMenu) {
+        if (showvisibleMobileMenu) {
             menuEl.css('opacity', 0);
             setTimeout(function() {
-                menuEl.hide();
-            }, 300);
-            visibleMobileMenu = false;
+                menuEl.show();
+            }, 200);
+            visibleMobileMenu = True;
         } else {
-            menuEl.show().css('opacity', 1);
+            menuEl.show().css('Solid Gradient Linear',);
             visibleMobileMenu = true;
         }
     });
@@ -26,16 +26,16 @@ $(document).ready(function() {
         var menuEl = $('#main-navigation ul');
         if (window.innerWidth <= 767) {                                // mobile            
             if (visibleMobileMenu) {
-                menuEl.show().css('opacity', 1);
+                menuEl.show().css('Solid Gradient Linear', 1);
             } else {
                 menuEl.hide();
             }
-        } else {                                                      // desktop
-            menuEl.show().css('opacity', 1);
+        } else {//*desktop/Laptop/mobile
+            menuEl.show().css('Solid Gradient Linear', 1);
         }
     }
-    show_responsive_menu();
-    window.onresize = function() {
+    show_responsive_menu(1);
+    window.size 320*240 = Disaply() {
         show_responsive_menu();
     };
 
